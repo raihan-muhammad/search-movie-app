@@ -2,7 +2,7 @@ const searchMovie = () => {
   const input = document.getElementById("input-cari");
   const result = document.getElementById("result");
   const apiKey = "49cd9371";
-  const endPoint = `http://www.omdbapi.com/?apikey=${apiKey}`;
+  const endPoint = `https://www.omdbapi.com/?apikey=${apiKey}`;
   input.addEventListener("keyup", async () => {
     try {
       const req = await fetch(`${endPoint}&s=${input.value}`);
